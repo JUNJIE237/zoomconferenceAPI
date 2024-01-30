@@ -104,7 +104,7 @@ function websdkready() {
           console.log(res);
           meetingConfig.signature = res;
           meetingConfig.sdkKey = CLIENT_ID;
-          var joinUrl = "/Users/User/Desktop/CDN/meeting.html?" + testTool.serialize(meetingConfig);
+          var joinUrl = "http://127.0.0.1:5500/meeting.html?" + testTool.serialize(meetingConfig);
           console.log(joinUrl);
           window.open(joinUrl, "_blank");
         },
@@ -141,7 +141,7 @@ function websdkready() {
         meetingConfig.sdkKey = CLIENT_ID;
         var joinUrl =
           testTool.getCurrentDomain() +
-          "/Users/User/Desktop/CDN/meeting.html?" +
+          "http://127.0.0.1:5500/meeting.html?" +
           testTool.serialize(meetingConfig);
         document
           .getElementById("copy_link_value")
